@@ -35,7 +35,6 @@ portfolio/
 4. **Update contact details.** Replace the placeholder email/phone in the Contact section.
 5. **Swap project images.** Each project card currently uses an icon-on-gradient placeholder. Replace with real screenshots in `assets/images/` for a stronger impression.
 6. **Wire up the contact form.** Validation is fully functional client-side, but the form does not send anywhere yet — connect it to a service like Formspree, EmailJS, or your own backend endpoint.
-7. **GitHub stats.** The numbers in the GitHub section and the contribution graph are placeholders — connect the GitHub REST API or a service like github-readme-stats if you want live data.
 
 ## Features implemented
 
@@ -44,7 +43,6 @@ portfolio/
 - Floating particle canvas background (respects `prefers-reduced-motion`)
 - Scroll progress bar, sticky glass navbar, active-section highlighting
 - Scroll-reveal animations, animated counters, and animated skill bars
-- Project filtering by category (All / AI / Python / Web) + live search
 - Accessible, validated contact form (name, email, subject, message)
 - Fully responsive layout (mobile, tablet, desktop) using Flexbox and Grid
 - Semantic HTML5, ARIA labels, visible focus states
