@@ -148,6 +148,7 @@ html.light .glass-nav {
   margin-left: 2px; vertical-align: -0.1em;
   animation: blink 0.9s steps(1) infinite;
 }
+.hero-role { color: var(--text-primary); }
 
 /* ---------- Terminal signature element ---------- */
 .terminal {
@@ -201,14 +202,33 @@ html.light .terminal {
 
 .btn-outline {
   border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  background: rgba(148,163,184,0.08);
   transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
 }
 .btn-outline:hover { border-color: var(--accent); transform: translateY(-2px); background: rgba(59,130,246,0.08); }
+html.light .btn-outline {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(15, 23, 42, 0.22);
+}
 
 .social-icon {
+  background: rgba(148, 163, 184, 0.08);
   transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), border-color 0.3s ease, color 0.3s ease;
 }
 .social-icon:hover { transform: translateY(-4px) rotate(-6deg); border-color: var(--accent); color: var(--accent); }
+html.light .social-icon {
+  color: #1E293B;
+  border-color: rgba(15, 23, 42, 0.18);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+html.light #contact-form input,
+html.light #contact-form textarea {
+  color: var(--text-primary);
+  border-color: rgba(15, 23, 42, 0.18);
+  background: rgba(255, 255, 255, 0.9);
+}
 
 /* ---------- Back to top ---------- */
 #back-to-top {
