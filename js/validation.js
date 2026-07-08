@@ -63,25 +63,23 @@
     });
 
     form.addEventListener('submit', (e) => {
-      e.preventDefault();
       const validations = [validateName(), validateEmail(), validateSubject(), validateMessage()];
       const allValid = validations.every(Boolean);
 
       if (!allValid) {
+        e.preventDefault();
         if (successBox) successBox.classList.add('hidden');
         const firstInvalid = form.querySelector('.field-error');
         if (firstInvalid) firstInvalid.focus();
         return;
       }
 
-      // No backend is wired up — this is a static portfolio, so we
-      // simulate a successful send and reset the form.
+      // Valid form: allow normal browser POST to Formspree.
+      // Optional: show temporary message while submitting.
       if (successBox) {
         successBox.classList.remove('hidden');
-        successBox.textContent = 'Message sent — thanks for reaching out! I\u2019ll reply within a couple of days.';
+        successBox.textContent = 'Sending your message...';
       }
-      form.reset();
-      Object.values(fields).forEach((f) => setError(f, ''));
     });
   });
 })();
