@@ -124,20 +124,6 @@ I am actively interested in opportunities related to:
 
 I am always open to learning from experienced developers and contributing to meaningful projects.
 
----
-
-## 📊 GitHub Activity
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=BIDUR2062\&show_icons=true\&theme=transparent)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BIDUR2062\&layout=compact\&theme=transparent)
-
-</div>
-
----
-
 ## 🤝 Connect With Me
 
 <div align="center">
