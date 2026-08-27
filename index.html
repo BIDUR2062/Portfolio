@@ -17,7 +17,7 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <!-- Tailwind CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -28,12 +28,12 @@
       extend: {
         colors: {
           base: '#0F172A',
-          accent: '#3B82F6',
-          secondary: '#8B5CF6',
-          cyan: '#22D3EE',
+          accent: '#F97316',
+          secondary: '#0D9488',
+          cyan: '#F59E0B',
         },
         fontFamily: {
-          display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+          display: ['"Sora"', 'Inter', 'sans-serif'],
           sans: ['Inter', 'system-ui', 'sans-serif'],
           mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
         },
@@ -104,7 +104,6 @@
 <!-- ============ HERO ============ -->
 <section id="home" class="relative min-h-screen flex items-center pt-28 pb-16 overflow-hidden">
   <div class="absolute inset-0 -z-10">
-    <canvas id="particles-canvas"></canvas>
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[var(--bg)]"></div>
     <div class="absolute -top-40 -left-40 w-96 h-96 bg-accent/20 rounded-full blur-[120px]"></div>
     <div class="absolute -bottom-40 -right-20 w-96 h-96 bg-secondary/20 rounded-full blur-[120px]"></div>
@@ -145,7 +144,7 @@
     </div>
 
     <!-- Visual column: profile photo + summary card -->
-    <div class="reveal-scale relative" style="--delay:150ms">
+    <div class="reveal relative" style="--delay:100ms">
       <div class="relative mx-auto max-w-md">
         <div class="absolute -top-8 -right-4 sm:-right-8 z-10 w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden grad-border shadow-2xl bg-gradient-to-br from-accent/40 to-secondary/40 flex items-center justify-center">
           <svg class="w-16 h-16 text-slate-100/80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.5 3-6 8-6s8 2.5 8 6"/></svg>
@@ -154,10 +153,8 @@
 
         <div class="terminal">
           <div class="terminal-bar">
-            <span class="terminal-dot bg-red-400/80"></span>
-            <span class="terminal-dot bg-amber-400/80"></span>
-            <span class="terminal-dot bg-emerald-400/80"></span>
-            <span class="font-semibold text-xs text-slate-500 ml-3">Professional Summary</span>
+            <span class="terminal-label">Professional Snapshot</span>
+            <span class="terminal-pill">backend + ai</span>
           </div>
           <div class="p-6 text-sm leading-relaxed space-y-3">
             <p class="text-slate-700 dark:text-slate-300">Focused on backend engineering, APIs, and intelligent systems.</p>
@@ -219,19 +216,19 @@
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-16">
-      <div class="glass rounded-2xl p-6 text-center card-hover reveal-scale" style="--delay:0ms">
+      <div class="glass rounded-2xl p-6 text-center card-hover reveal" style="--delay:0ms">
         <p class="font-display font-bold text-3xl grad-text"><span data-counter="5" data-suffix="+">0</span></p>
         <p class="text-slate-400 text-sm mt-1">Projects Completed</p>
       </div>
-      <div class="glass rounded-2xl p-6 text-center card-hover reveal-scale" style="--delay:80ms">
+      <div class="glass rounded-2xl p-6 text-center card-hover reveal" style="--delay:60ms">
         <p class="font-display font-bold text-3xl grad-text"><span data-counter="5">0</span></p>
         <p class="text-slate-400 text-sm mt-1">Programming Languages</p>
       </div>
-      <div class="glass rounded-2xl p-6 text-center card-hover reveal-scale" style="--delay:160ms">
+      <div class="glass rounded-2xl p-6 text-center card-hover reveal" style="--delay:120ms">
         <p class="font-display font-bold text-3xl grad-text"><span data-counter="300" data-suffix="+">0</span></p>
         <p class="text-slate-400 text-sm mt-1">Problems Solved</p>
       </div>
-      <div class="glass rounded-2xl p-6 text-center card-hover reveal-scale" style="--delay:240ms">
+      <div class="glass rounded-2xl p-6 text-center card-hover reveal" style="--delay:180ms">
         <p class="font-display font-bold text-3xl grad-text"><span data-counter="3">0</span></p>
         <p class="text-slate-400 text-sm mt-1">Years Learning</p>
       </div>
@@ -432,7 +429,6 @@
 
 <script src="js/theme.js"></script>
 <script src="js/typing.js"></script>
-<script src="js/particles.js"></script>
 <script src="js/animation.js"></script>
 <script src="js/validation.js"></script>
 <script src="js/main.js"></script>
