@@ -7,7 +7,7 @@
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     /* ---- Generic reveal-on-scroll ---- */
-    const revealEls = document.querySelectorAll('.reveal, .reveal-scale');
+    const revealEls = document.querySelectorAll('.reveal');
     if (prefersReducedMotion) {
       revealEls.forEach((el) => el.classList.add('in-view'));
     } else if ('IntersectionObserver' in window) {
@@ -20,7 +20,7 @@
             }
           });
         },
-        { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+        { threshold: 0.12 }
       );
       revealEls.forEach((el) => revealObserver.observe(el));
     } else {
