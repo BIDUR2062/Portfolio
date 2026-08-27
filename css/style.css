@@ -298,3 +298,24 @@ img.lazy-img.loaded { opacity: 1; }
 
 /* ---------- Section eyebrow ---------- */
 .eyebrow::before { content: "// "; color: var(--accent-cyan); opacity: 0.8; }
+
+/* ---------- Light-mode text color overrides (quick fix) ---------- */
+/* Map Tailwind's lighter slate utilities to your theme tokens in light mode */
+html.light .text-slate-200,
+html.light .text-slate-300,
+html.light .text-slate-400 {
+  color: var(--text-muted) !important; /* readable mid-dark gray on white */
+}
+
+html.light .text-slate-100,
+html.light .text-slate-50 {
+  color: var(--text-primary) !important;
+}
+
+/* Ensure some components use the stronger primary text where needed */
+html.light .btn-outline,
+html.light .eyebrow,
+html.light .font-mono,
+html.light .terminal-label {
+  color: var(--text-primary) !important;
+}
